@@ -7,7 +7,7 @@ trait Model
     public function __construct()
     {
         try {
-            $this->pdo = new PDO('mysql:host=sql588.main-hosting.eu;dbname=u504868350_kgb', 'u504868350_kgb', 'OpU8Chdcx93iCXxUAoMz');
+            $this->pdo = new PDO('mysql:host=localhost;dbname=kgb', 'root', 'root');
         } catch(PDOException $e) {
             exit('Erreur : '.$e->getMessage());
         }
